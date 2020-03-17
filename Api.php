@@ -32,8 +32,7 @@ class Api{
 		$data->execute();
 		$customer = [];
 		while($row= $data->fetch(PDO::FETCH_OBJ)){
-				$customer[]=["Date"=>$row->Date,
-				"CusNum"=>$row->CusNum,
+				$customer[]=["CustNum"=>$row->CustNum,
 				"Name"=>$row->Name,
 				"Address"=>$row->Address,
 				"City"=>$row->City,
